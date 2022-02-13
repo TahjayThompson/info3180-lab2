@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class='card-container'>
+	<div class = 'card-main flex-col'>
+		<div class="card-top flex-col">
+			<div class="img">
+				<img src="{{url_for('static', filename='img/walrus.png')}}" width="96px" height="96px">
+			</div>
+			<div class="card-text">
+				<h2 class="card-name">
+					{{name}}
+				</h2>
+				<span> @mjane</span>
+				<h3>{{location}}</h3>
+				<h3>Joined {{time}}</h3>
+			</div>
+			
+		</div>
+		<div class="card-bottom flex-col">
+			<div class="card-para">A extremely motivated Self taught Frontend Developer/Jamstack Developer
+
+    telescope I’m currently working on TahjayThompson.com
+
+    seedling I’m currently learning Next js
+
+    dancers I’m looking to collaborate on Frontend projects
+
+    man_technologist</div>
+			<div  class="card-data ">
+				<div class="data-1">
+					<h2>7</h2>
+					<span>Posts</span>
+				</div>
+
+				<div class="data-1">
+					<h2>100</h2>
+					<span>Following</span>
+				</div>
+				<div class="data-1">
+					<h2>250</h2>
+					<span>Followers</span>
+				</div>
+			</div>
+    		<a href="#" class="btn btn-primary">Follow</a>
+		</div>
+		
+	</div>
+</div>
+
+{% endblock %}
